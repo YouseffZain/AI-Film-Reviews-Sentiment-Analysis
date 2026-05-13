@@ -50,14 +50,18 @@ movie-sentiment-ai/
 pip install -r requirements.txt
 ```
 
-### 2. Run the Notebooks
+### 2. Download Assets
+- **Dataset (IMDB 50K):** [Download CSV](https://drive.google.com/file/d/1yxNBF2hiQvIs_z92BK5m3G3cdDUqd8oo/view?usp=drive_link) - Place in the `data/` directory.
+- **Fine-Tuned RoBERTa Model:** [Download Weights](https://drive.google.com/drive/folders/1Dot0cfjsYGv9b-iGoyDsnGJxmCEn9pne?usp=drive_link) - Place in the `models/` directory.
+
+### 3. Run the Notebooks
 All notebooks are designed to run on **Google Colab** (with T4 GPU) or **Kaggle**.
 
 - Open any notebook in Colab/Kaggle
 - Follow the inline instructions
 - Models are saved to Google Drive for persistence across sessions
 
-### 3. Launch the Gradio UI
+### 4. Launch the Gradio UI
 **Option A — Master Notebook (Colab):** Open `Master_Sentiment_Analysis.ipynb` in Google Colab, select T4 GPU, and run all cells. A public URL is generated at the end.
 
 **Option B — Standalone app (local):**
